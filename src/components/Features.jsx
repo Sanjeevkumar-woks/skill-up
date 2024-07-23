@@ -24,13 +24,13 @@ export const Features = () => {
 
       {/* card-session */}
       <div className="flex gap-4 p-4 justify-between sm:flex-col md:flex-row ">
-        <div className="flex flex-col gap-2  bg-green-50 rounded-xl p-6 border-2 border-green-300 cursor-pointer">
+        <div className="flex flex-col  bg-green-50 rounded-xl p-4 border-2 border-green-300 cursor-pointer shadow-lg shadow-green-500 md:shadow-md md:shadow-green-500  hover:shadow-xl hover:shadow-green-500">
           <div className="flex justify-end">
             <span>
               <BsStars color="lightgray" size={30} />
             </span>
           </div>
-          <div className="flex flex-col gap-2 items-center">
+          <div className="flex flex-col gap-2 items-start">
             <p className="flex justify-center items-center gap-2 text-xl font-bold">
               <span className="bg-green-400 p-2 rounded-full">
                 <FaGraduationCap size={30} color="white" />
@@ -38,53 +38,53 @@ export const Features = () => {
               Expert Tutors
             </p>
             <p className="text-sm font-medium">
-              when an unknown printer took a galley offer
+              When an unknown printer took a Galley offer
             </p>
-            <p className="text-sm font-medium">type and scrambled makes.</p>
+            <p className="text-sm font-medium">Type and scrambled makes.</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2 bg-purple-50 rounded-xl p-6 border-2 border-purple-300 cursor-pointer">
+        <div className="flex flex-col bg-purple-50 rounded-xl p-4 border-2 border-purple-300 cursor-pointer shadow-lg shadow-purple-500 md:shadow-md md:shadow-purple-500  hover:shadow-xl hover:shadow-purple-500">
           <div className="flex justify-end">
             <span>
               <BsStars color="lightgray" size={30} />
             </span>
           </div>
-          <div className="flex flex-col gap-2 items-center">
+          <div className="flex flex-col gap-2 items-start">
             <p className="flex justify-center items-center gap-2 text-xl font-bold">
               <span className="bg-purple-400 p-2 rounded-full">
                 <BiBook size={30} color="white" />
               </span>
-              Expert Tutors
+              Expert Courses
             </p>
             <p className="text-sm font-medium">
-              when an unknown printer took a galley offer
+              When an unknown printer took a Galley offer
             </p>
-            <p className="text-sm font-medium">type and scrambled makes.</p>
+            <p className="text-sm font-medium">Type and scrambled makes.</p>
           </div>
         </div>
-        <div className="flex flex-col gap-2  bg-orange-50 rounded-xl p-6 border-2 border-orange-300 cursor-pointer ">
+        <div className="flex flex-col   bg-orange-50 rounded-xl p-4 border-2 border-orange-300 cursor-pointer shadow-lg shadow-orange-500 md:shadow-md md:shadow-orange-500 hover:shadow-xl hover:shadow-orange-500">
           <div className="flex justify-end">
             <span>
               <BsStars color="lightgray" size={30} />
             </span>
           </div>
-          <div className="flex flex-col gap-2 items-center">
+          <div className="flex flex-col gap-2 items-start">
             <p className="flex justify-center items-center gap-2 text-xl font-bold">
               <span className="bg-orange-400 p-2 rounded-full">
                 <PiCertificateFill size={30} color="white" />
               </span>
-              Expert Tutors
+              Expert Certificate
             </p>
             <p className="text-sm font-medium">
-              when an unknown printer took a galley offer
+              When an unknown printer took a Galley offer
             </p>
-            <p className="text-sm font-medium">type and scrambled makes.</p>
+            <p className="text-sm font-medium">Type and scrambled makes.</p>
           </div>
         </div>
       </div>
 
       {/* free-trial */}
-      <div className="flex flex-wrap flex-row gap-2 sm:flex-col md:flex-row w-full h-full px-40 py-6">
+      <div className="flex flex-wrap flex-row gap-2 sm:flex-col md:flex-row w-full h-full px-40 py-6 ">
         <div className=" flex flex-1 justify-center items-center relative  ">
           <img
             src="https://img.freepik.com/premium-photo/teenager-student-girl-yellow-pointing-finger-side_1368-40175.jpg"
@@ -92,7 +92,7 @@ export const Features = () => {
             className="w-56 h-80 sm:w-48 rounded-full object-cover "
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="absolute pb-28 sm:pb-32">
+            <div className="absolute pb-36 md:pb-24 sm:pb-24">
               <svg viewBox="0 0 100 100" className="w-full h-full p-4">
                 <path
                   id="text-arc"

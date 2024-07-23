@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export const Hero = () => {
   return (
-    <div className="flex flex-row xl:flex-row sm:flex-col  sm:gap-10 w-full h-full bg-gradient-to-r from-indigo-900 to-indigo-600 text-white py-20 md:px-20 xl:px-36 sm:px-10">
+    <div className="flex flex-row xl:flex-row sm:flex-col  w-full h-full bg-gradient-to-r from-indigo-900 to-indigo-600 text-white py-20 md:px-20 xl:px-36 sm:px-10">
       <div className="flex flex-col flex-1 p-10 justify-center ">
         <p className="text-5xl sm:text-3xl font-bold ">
           Learning is <span className="bg-yellow-300">What you</span>

@@ -23,7 +23,7 @@ export const Features = () => {
       </div>
 
       {/* card-session */}
-      <div className="flex gap-4 p-4 justify-between sm:flex-col md:flex-row ">
+      <div className="flex gap-4 p-4 justify-between flex-wrap  sm:justify-center sm:items-center">
         <div className="flex flex-col  bg-green-50 rounded-xl p-4 border-2 border-green-300 cursor-pointer shadow-lg shadow-green-500 md:shadow-md md:shadow-green-500  hover:shadow-xl hover:shadow-green-500">
           <div className="flex justify-end">
             <span>
@@ -62,7 +62,7 @@ export const Features = () => {
             <p className="text-sm font-medium">Type and scrambled makes.</p>
           </div>
         </div>
-        <div className="flex flex-col   bg-orange-50 rounded-xl p-4 border-2 border-orange-300 cursor-pointer shadow-lg shadow-orange-500 md:shadow-md md:shadow-orange-500 hover:shadow-xl hover:shadow-orange-500">
+        <div className="flex flex-col  bg-orange-50 rounded-xl p-4 border-2 border-orange-300 cursor-pointer shadow-lg shadow-orange-500 md:shadow-md md:shadow-orange-500 hover:shadow-xl hover:shadow-orange-500">
           <div className="flex justify-end">
             <span>
               <BsStars color="lightgray" size={30} />
@@ -84,12 +84,12 @@ export const Features = () => {
       </div>
 
       {/* free-trial */}
-      <div className="flex flex-wrap flex-row gap-2 sm:flex-col md:flex-row w-full h-full px-40 py-6 ">
+      <div className="flex  flex-wrap md:flex-row  md:gap-32  sm:py-20 sm:flex-col sm:gap-2">
         <div className=" flex flex-1 justify-center items-center relative  ">
           <img
             src="https://img.freepik.com/premium-photo/teenager-student-girl-yellow-pointing-finger-side_1368-40175.jpg"
             alt="image"
-            className="w-56 h-80 sm:w-48 rounded-full object-cover "
+            className="w-56 h-80  rounded-full object-cover "
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="absolute pb-36 md:pb-24 sm:pb-24">
@@ -112,8 +112,8 @@ export const Features = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-1  flex-col gap-2 items-left sm:items-center sm:p-2 p-10 ">
-          <div className="w-fit  items-center">
+        <div className="flex flex-1  flex-col gap-2 xl:items-lef md:items-left sm:items-center sm:p-2 p-10 w-full">
+          <div className="w-fit">
             <p className="text-sm text-purple-600 bg-purple-200 rounded-xl p-1 ">
               Get more About us
             </p>

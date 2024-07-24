@@ -16,7 +16,7 @@ const Button = ({ text, color, icon }) => {
 
   return (
     <button
-      className={`px-4 py-2 rounded ${
+      className={`px-4 py-2 rounded-full ${
         colorClasses[color] || colorClasses.red
       } text-white`}
       style={boxShadowStyle}

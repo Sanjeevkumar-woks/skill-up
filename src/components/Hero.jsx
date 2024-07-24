@@ -30,8 +30,8 @@ export const Hero = () => {
       </div>
       <div className="flex flex-1 items-center justify-center relative">
         <div className="flex gap-4 items-center justify-center -rotate-45">
-          <div className="bg-yellow-500 h-96 w-28 rounded-full mb-4"></div>
-          <div className="bg-yellow-500 h-96 w-28 rounded-full"></div>
+          <div className="bg-yellow-500 h-96 sm:h-40 w-28 rounded-full mb-4"></div>
+          <div className="bg-yellow-500 h-96 sm:h-40  w-28 rounded-full"></div>
         </div>
 
         <div className="bg-white p-4 rounded-xl absolute">

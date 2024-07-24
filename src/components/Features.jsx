@@ -93,7 +93,7 @@ export const Features = () => {
               className="w-56 h-80 rounded-full object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="absolute pb-36 md:pb-24 sm:pb-24">
+              <div className="absolute pb-36 md:pb-48 sm:pb-24">
                 <svg viewBox="0 0 100 100" className="w-full h-full p-4">
                   <path
                     id="text-arc"

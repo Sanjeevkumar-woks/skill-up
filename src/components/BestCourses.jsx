@@ -8,80 +8,100 @@ export const BestCourses = () => {
     console.log(key);
   };
 
-  const development = [
+  const allCourses = [
     {
       poster:
-        "https://i0.wp.com/lh3.googleusercontent.com/-e7zy95WSPVE/X_RxPPgu-2I/AAAAAAAAJwM/VazGO9ThmeMqwBKt2KMqYKgusJy_Zy1pwCLcBGAsYHQ/image.png?ssl=1",
+        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb01.jpg.png?raw=true",
       category: "Development",
-      price: "20",
+      mentor: "David Miller",
+      rating: 4.8,
+      price: 9,
       title: "Learn JavaScript With Imagination",
-      noStudents: 60,
-      duration: "70 h 45 m",
-      noGraduates: 40,
+      noStudents: 5,
+      duration: "11h 20m",
+      noGraduates: 22,
     },
     {
       poster:
-        "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/training-youtube-thumbnail-design-template-c03a387c9fb1e0bf6069868683e7fe23_screen.jpg?ts=1630949973",
-      category: "Development",
-      price: "20",
+        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb02.jpg.png?raw=true",
+      category: "Design",
+      mentor: "Wilson",
+      rating: 4.5,
+      price: "10",
       title: "Learn JavaScript With Imagination",
       noStudents: 60,
       duration: "70 h 45 m",
-      noGraduates: 40,
+      noGraduates: 202,
     },
     {
       poster:
-        "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/313901626/original/40ba8bbaa6c3376fec0bdc42b50ac2e3f4d8b3e2/design-attractive-online-course-thumbnail-for-udemy.png",
-      category: "Development",
+        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb03.jpg.png?raw=true",
+      category: "Data Science",
+      mentor: "warren",
+      rating: 4.8,
       price: "20",
       title: "Learn JavaScript With Imagination",
-      noStudents: 60,
-      duration: "70 h 45 m",
-      noGraduates: 40,
+      noStudents: 8,
+      duration: "18h 20m",
+      noGraduates: 66,
+    },
+    {
+      poster:
+        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb04.jpg.png?raw=true",
+      category: "Business",
+      mentor: "Robert Fox",
+
+      rating: 4.2,
+      price: "20",
+      title: "Learn JavaScript With Imagination",
+      noStudents: 5,
+      duration: "11h 20m",
+      noGraduates: 22,
     },
   ];
 
   const items = [
     {
       key: "1",
-      label: "Development",
+      label: "All Courses",
       children: (
         <div className="flex gap-2 flex-wrap justify-center items-center">
-          {development.map((item) => {
-            return (
-              <Card
-                title={item.title}
-                poster={item.poster}
-                category={item.category}
-                price={item.price}
-                duration={item.duration}
-                noStudents={item.noStudents}
-                noGraduates={item.noGraduates}
-              />
-            );
+          {allCourses.map((course) => {
+            return <Card course={course} />;
           })}
         </div>
       ),
     },
     {
       key: "2",
-      label: "Design",
+      label: "Development",
       children: (
         <div className="flex gap-2 flex-wrap justify-center items-center">
-          <Card />
-          <Card />
-          <Card />
+          {allCourses.map((course) => {
+            return <Card course={course} />;
+          })}
         </div>
       ),
     },
     {
       key: "3",
-      label: "Data Science",
+      label: "Design",
       children: (
         <div className="flex gap-2 flex-wrap justify-center items-center">
-          <Card />
-          <Card />
-          <Card />
+          {allCourses.map((course) => {
+            return <Card course={course} />;
+          })}
+        </div>
+      ),
+    },
+    {
+      key: "4",
+      label: "Business",
+      children: (
+        <div className="flex gap-2 flex-wrap justify-center items-center">
+          {allCourses.map((course) => {
+            return <Card course={course} />;
+          })}
         </div>
       ),
     },

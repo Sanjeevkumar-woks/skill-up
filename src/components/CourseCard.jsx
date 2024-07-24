@@ -6,17 +6,20 @@ import { FaGraduationCap } from "react-icons/fa";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { HiOutlineUserMinus } from "react-icons/hi2";
 
-export const Card = ({
-  poster,
-  category,
-  price,
-  title,
-  noStudents,
-  duration,
-  noGraduates,
-}) => {
+export const Card = ({ course }) => {
+  const {
+    poster,
+    category,
+    mentor,
+    rating,
+    price,
+    title,
+    noStudents,
+    duration,
+    noGraduates,
+  } = course;
   return (
-    <div className="flex flex-col bg-white rounded-xl p-4 gap-1">
+    <div className="flex flex-col bg-white rounded-xl p-4 gap-2 cursor-pointer hover:scale-105 transition-transform duration-200 ease-in-out">
       <div className="flex justify-center items-center">
         <img src={poster} alt="course" className="w-full h-32 object-cover" />
       </div>
@@ -32,12 +35,12 @@ export const Card = ({
       <div className="flex justify-between p-2">
         <p className="flex gap-1">
           <FaRegCircleUser size={20} />
-          Sanjeev
+          {mentor}
         </p>
 
         <p className="flex gap-1">
           <BsStarFill size={20} color="gold" />
-          <p className=" text-gray-400">( 4.5 Reviews)</p>
+          <p className=" text-gray-400">( {rating} Reviews)</p>
         </p>
       </div>
       <hr />

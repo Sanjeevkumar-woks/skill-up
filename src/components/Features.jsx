@@ -84,37 +84,40 @@ export const Features = () => {
       </div>
 
       {/* free-trial */}
-      <div className="flex  flex-wrap md:flex-row  md:gap-32  sm:py-20 sm:flex-col sm:gap-2">
-        <div className=" flex flex-1 justify-center items-center relative  ">
-          <img
-            src="https://img.freepik.com/premium-photo/teenager-student-girl-yellow-pointing-finger-side_1368-40175.jpg"
-            alt="image"
-            className="w-56 h-80  rounded-full object-cover "
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="absolute pb-36 md:pb-24 sm:pb-24">
-              <svg viewBox="0 0 100 100" className="w-full h-full p-4">
-                <path
-                  id="text-arc"
-                  d="M10,50a40,40 0 1,1 80,0a40,40 0 1,1 0,0"
-                  fill="none"
-                />
-                <text fontSize="6" className="text-gray-700 font-semibold">
-                  <textPath
-                    href="#text-arc"
-                    startOffset="50%"
-                    textAnchor="middle"
-                  >
-                    •EDUCATION •SYSTEM •CAN •MAKE •CHANGE •
-                  </textPath>
-                </text>
-              </svg>
+      <div className="flex flex-col md:flex-row w-full p-4">
+        <div className="flex flex-1 justify-center items-center">
+          <div className="relative">
+            <img
+              src="https://img.freepik.com/premium-photo/teenager-student-girl-yellow-pointing-finger-side_1368-40175.jpg"
+              alt="image"
+              className="w-56 h-80 rounded-full object-cover"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="absolute pb-36 md:pb-24 sm:pb-24">
+                <svg viewBox="0 0 100 100" className="w-full h-full p-4">
+                  <path
+                    id="text-arc"
+                    d="M10,50a40,40 0 1,1 80,0a40,40 0 1,1 0,0"
+                    fill="none"
+                  />
+                  <text fontSize="6" className="text-gray-700 font-semibold">
+                    <textPath
+                      href="#text-arc"
+                      startOffset="50%"
+                      textAnchor="middle"
+                    >
+                      •EDUCATION •SYSTEM •CAN •MAKE •CHANGE •
+                    </textPath>
+                  </text>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-1  flex-col gap-2 xl:items-lef md:items-left sm:items-center sm:p-2 p-10 w-full">
+
+        <div className="flex flex-1 flex-col gap-2 items-center md:items-start p-2 w-full">
           <div className="w-fit">
-            <p className="text-sm text-purple-600 bg-purple-200 rounded-xl p-1 ">
+            <p className="text-sm text-purple-600 bg-purple-200 rounded-xl p-1">
               Get more About us
             </p>
           </div>
@@ -125,15 +128,15 @@ export const Features = () => {
             </div>
 
             <div className="flex flex-col gap-1">
-              <p className=" text-sm text-gray-500 ">
+              <p className="text-sm text-gray-500">
                 Groove’s intuitive shared inbox makes it easy for team members
                 to
               </p>
-              <p className=" text-sm text-gray-500 ">
-                organize, prioritize and.In this episode of the Smashing Pod
+              <p className="text-sm text-gray-500">
+                organize, prioritize and. In this episode of the Smashing Pod
                 we’re
               </p>
-              <p className=" text-sm text-gray-500 ">
+              <p className="text-sm text-gray-500">
                 talking about Web Platform Baseline
               </p>
             </div>

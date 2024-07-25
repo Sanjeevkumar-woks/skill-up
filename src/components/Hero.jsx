@@ -30,15 +30,15 @@ export const Hero = () => {
       </div>
       <div className="flex flex-1 items-center justify-center relative">
         <div className="flex gap-4 items-center justify-center -rotate-45">
-          <div className="bg-yellow-500 h-96 sm:h-40 w-28 rounded-full mb-4"></div>
-          <div className="bg-yellow-500 h-96 sm:h-40  w-28 rounded-full"></div>
+          <div className="bg-yellow-500 md:h-96 h-52 w-28 rounded-full mb-4"></div>
+          <div className="bg-yellow-500 md:h-96 h-52  w-28 rounded-full"></div>
         </div>
 
         <div className="bg-white p-4 rounded-xl absolute">
-          <div className="w-full">
+          <div className="w-full flex justify-center">
             <img
               src="https://templates.simplified.co/usetldr/1022255/thumb/5a108056-a070-44ee-a123-1afd489077e0.jpg"
-              className="w-72 h-48  cursor-pointer object-cover"
+              className="w-full sm:w-52 md:w-72 lg:w-96 h-auto cursor-pointer object-cover"
               alt="Coding for Beginners"
             />
           </div>

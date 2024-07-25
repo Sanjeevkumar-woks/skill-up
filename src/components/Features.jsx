@@ -115,13 +115,13 @@ export const Features = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col gap-2 items-center md:items-start p-2 w-full">
+        <div className="flex flex-1 flex-col gap-4 items-center md:items-start p-2 w-full py-20">
           <div className="w-fit">
             <p className="text-sm text-purple-600 bg-purple-200 rounded-xl p-1">
               Get more About us
             </p>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-4">
             <div>
               <p className="text-3xl font-bold">Thousand of Top Courses</p>
               <p className="text-3xl font-bold">Now In One Place</p>

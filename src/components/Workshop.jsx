@@ -63,7 +63,7 @@ export const Workshop = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-col  xl:flex-row gap-10 text-white bg-gradient-to-r from-indigo-900 to-indigo-600 rounded-xl md:mx-20 xl:mx-60 sm:mx-20 items-center p-6">
+      <div className="flex flex-col md:flex-col  xl:flex-row gap-10 text-white bg-gradient-to-r from-indigo-900 to-indigo-600 rounded-xl md:mx-20 xl:mx-60 sm:mx-20clear items-center p-6">
         <div className="w-full sm:w-1/3">
           <p className="text-3xl sm:text-1xl md:text-3xl font-bold px-10 ">
             Thousands Of

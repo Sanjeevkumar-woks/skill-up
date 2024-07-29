@@ -16,6 +16,9 @@ export const NewsBlogsCard = ({ feed }) => {
           <FaRegCircleUser size={20} /> {author}
         </p>
       </div>
+      <Typography className="text-lg font-bold p-1">
+        {title?.substring(0, 25) + "..."}
+      </Typography>
     </div>
   );
 };

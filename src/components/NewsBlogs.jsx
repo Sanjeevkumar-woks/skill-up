@@ -1,7 +1,3 @@
-import { Tabs } from "antd";
-import { Card } from "./CourseCard";
-import Button from "./Button";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { NewsBlogsCard } from "./NewsBlogsCard";
 
 export const NewsBlogs = () => {

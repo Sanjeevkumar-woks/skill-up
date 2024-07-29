@@ -4,7 +4,7 @@ Welcome to **Skill-up**, an EdTech platform providing a variety of courses for s
 
 ## 🌐 Live Demo
 
-Check out the live demo of the project [here](https://zingy-fudge-b3445a.netlify.app/).
+Check out the live demo of the project [here](https://skillupio.netlify.app/).
 
 ## 📝 Project Description
 
@@ -12,7 +12,7 @@ Skill-up is an educational technology platform aimed at enhancing learning exper
 
 ## 📸 Screenshot
 
-[![Skill-up Screenshot](screenshot.png)](https://zingy-fudge-b3445a.netlify.app/)
+[![Skill-up Screenshot](screenshot.png)](https://skillupio.netlify.app/)
 
 ## 🚀 Installation Instructions
 

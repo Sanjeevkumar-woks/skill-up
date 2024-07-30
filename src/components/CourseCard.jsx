@@ -1,10 +1,8 @@
-import { Badge, Typography } from "antd";
-import Avatar from "antd/es/avatar/avatar";
+import { Typography } from "antd";
 import { BiBookReader } from "react-icons/bi";
 import { BsClockFill, BsStarFill } from "react-icons/bs";
 import { FaGraduationCap } from "react-icons/fa";
 import { FaRegCircleUser } from "react-icons/fa6";
-import { HiOutlineUserMinus } from "react-icons/hi2";
 
 export const Card = ({ course }) => {
   const {

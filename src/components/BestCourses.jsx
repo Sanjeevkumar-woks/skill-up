@@ -1,66 +1,27 @@
 import { Tabs } from "antd";
-import { Card } from "./CourseCard";
 import Button from "./Button";
-import { IoIosArrowRoundForward } from "react-icons/io";
+import { Card } from "./CourseCard";
+import { allCourses } from "../utils/Courses";
+import { useMemo } from "react";
 
 export const BestCourses = () => {
   const onChange = (key) => {
     console.log(key);
   };
 
-  const allCourses = [
-    {
-      poster:
-        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb01.jpg.png?raw=true",
-      category: "Development",
-      mentor: "David Miller",
-      rating: 4.8,
-      price: 9,
-      title: "Learn JavaScript With Imagination",
-      noStudents: 5,
-      duration: "11h 20m",
-      noGraduates: 22,
-    },
-    {
-      poster:
-        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb02.jpg.png?raw=true",
-      category: "Design",
-      mentor: "Wilson",
-      rating: 4.5,
-      price: "10",
-      title: "Learn JavaScript With Imagination",
-      noStudents: 60,
-      duration: "70 h 45 m",
-      noGraduates: 202,
-    },
-    {
-      poster:
-        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb03.jpg.png?raw=true",
-      category: "Data Science",
-      mentor: "warren",
-      rating: 4.8,
-      price: "20",
-      title: "Learn JavaScript With Imagination",
-      noStudents: 8,
-      duration: "18h 20m",
-      noGraduates: 66,
-    },
-    {
-      poster:
-        "https://github.com/Sanjeevkumar-woks/skill-up/blob/master/public/images/course_thumb04.jpg.png?raw=true",
-      category: "Business",
-      mentor: "Robert Fox",
+  const development = useMemo(() => {
+    return allCourses.filter((course) => course.category === "Development");
+  }, [allCourses]);
 
-      rating: 4.2,
-      price: "20",
-      title: "Learn JavaScript With Imagination",
-      noStudents: 5,
-      duration: "11h 20m",
-      noGraduates: 22,
-    },
-  ];
+  const design = useMemo(() => {
+    return allCourses.filter((course) => course.category === "Design");
+  }, [allCourses]);
 
-  const items = [
+  const business = useMemo(() => {
+    return allCourses.filter((course) => course.category === "Business");
+  }, [allCourses]);
+
+  const tabs = [
     {
       key: "1",
       label: "All Courses",
@@ -77,7 +38,7 @@ export const BestCourses = () => {
       label: "Development",
       children: (
         <div className="flex gap-2 flex-wrap justify-center items-center">
-          {allCourses.map((course) => {
+          {development.map((course) => {
             return <Card course={course} />;
           })}
         </div>
@@ -88,7 +49,7 @@ export const BestCourses = () => {
       label: "Design",
       children: (
         <div className="flex gap-2 flex-wrap justify-center items-center">
-          {allCourses.map((course) => {
+          {design.map((course) => {
             return <Card course={course} />;
           })}
         </div>
@@ -99,13 +60,14 @@ export const BestCourses = () => {
       label: "Business",
       children: (
         <div className="flex gap-2 flex-wrap justify-center items-center">
-          {allCourses.map((course) => {
+          {business.map((course) => {
             return <Card course={course} />;
           })}
         </div>
       ),
     },
   ];
+
   return (
     <div className="flex flex-col gap-10 bg-gradient-to-r items-center from-indigo-900 to-indigo-600 w-full h-full p-4">
       <p className="text-sm items-center text-purple-600 bg-purple-200 rounded-xl p-1  ">
@@ -123,7 +85,7 @@ export const BestCourses = () => {
         <Tabs
           itemColor="red"
           defaultActiveKey="1"
-          items={items}
+          items={tabs}
           onChange={onChange}
           size="large"
           centered

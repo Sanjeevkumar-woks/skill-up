@@ -1,16 +1,7 @@
 import logo from "../logo.ico";
 import { AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import { LuInstagram } from "react-icons/lu";
-
-const links = [
-  "All Programs",
-  "All courses",
-  "contact",
-  "About Us",
-  "Private Policy",
-  "Privacy Policy",
-  "Refund and Returns Policy",
-];
+import { footerLinks } from "../utils/footerLinks";
 
 export const Footer = () => {
   return (
@@ -32,11 +23,13 @@ export const Footer = () => {
         </div>
       </div>
       <div className="flex flex-1 justify-center items-center gap-1 list-none font-medium">
-        <ui className=" ">
-          {links.map((link) => {
-            return <li className=" hover:text-green-600">{link}</li>;
-          })}
-        </ui>
+        <ul>
+          {footerLinks.map((link, index) => (
+            <li key={index} className="hover:text-green-600">
+              <a href={link.url}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
       </div>
       <div className="flex flex-1 gap-2 justify-center items-center">
         <AiOutlineLinkedin size={40} className=" hover:text-green-600" />

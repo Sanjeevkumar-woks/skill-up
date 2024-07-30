@@ -38,7 +38,7 @@ export const Hero = () => {
           <div className="w-full flex justify-center">
             <img
               src="https://templates.simplified.co/usetldr/1022255/thumb/5a108056-a070-44ee-a123-1afd489077e0.jpg"
-              className="w-full sm:w-52 md:w-72 lg:w-96 h-auto cursor-pointer object-cover"
+              className="w-full sm:w-48 md:w-60 lg:w-60 h-auto cursor-pointer object-cover"
               alt="Coding for Beginners"
             />
           </div>

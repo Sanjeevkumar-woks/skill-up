@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export const Join = () => {
   return (
-    <div className="bg-gray-200 py-12">
+    <div className="bg-gray-200 py-12 px-4">
       <div className="flex flex-wrap gap-8 justify-center items-center">
         <div className="flex flex-col sm:flex-row justify-between bg-white rounded-xl p-6 shadow-lg">
           <div className="w-full sm:w-1/3 flex justify-center items-center mb-4 sm:mb-0">

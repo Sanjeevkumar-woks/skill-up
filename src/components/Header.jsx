@@ -6,32 +6,10 @@ import { RxAvatar } from "react-icons/rx";
 import { FiMenu, FiX } from "react-icons/fi";
 import Button from "./Button";
 import logo from "../logo.ico";
+import { HeaderLinks } from "../utils/HeaderLinks";
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const links = [
-    {
-      title: "Dashboard",
-      url: "",
-      items: [],
-    },
-    {
-      title: "All Courses",
-      url: "",
-      items: [],
-    },
-    {
-      title: "Contact",
-      url: "",
-      items: [],
-    },
-    {
-      title: "Affiliate",
-      url: "",
-      items: [],
-    },
-  ];
 
   return (
     <div className="flex flex-col md:flex-row justify-between items-center px-4 md:px-10 py-2 bg-white shadow-lg">
@@ -50,9 +28,9 @@ export const Header = () => {
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } md:flex md:items-center md:gap-4 w-full md:w-auto mt-4 md:mt-0`}
+        } md:flex  md:gap-4 w-full md:w-auto mt-4 md:mt-0 justify-between items-center`}
       >
-        {links.map((item, index) => (
+        {HeaderLinks.map((item, index) => (
           <a
             key={index}
             href={item.url}
@@ -61,12 +39,12 @@ export const Header = () => {
             {item.title} <MdKeyboardArrowDown />
           </a>
         ))}
-        <div className="flex gap-3 items-center mt-4 md:mt-0">
-          <BiSearch />
-          <PiCarThin />
-          <RxAvatar />
-          <Button text={"Resign"} color={"blue"} />
-        </div>
+      </div>
+      <div className="flex gap-3 items-center mt-4 md:mt-0">
+        <BiSearch size={25} />
+        <PiCarThin size={25} />
+        <RxAvatar size={25} />
+        <Button text={"Resign"} color={"blue"} />
       </div>
     </div>
   );

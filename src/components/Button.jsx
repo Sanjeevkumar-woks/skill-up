@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Button = ({ text, color, icon }) => {
+const Button = ({ text, color, icon, url }) => {
+  const navigate = useNavigate();
   const colorClasses = {
     red: "bg-red-700 hover:bg-red-900",
     blue: "bg-blue-700 hover:bg-blue-900",
@@ -20,6 +22,7 @@ const Button = ({ text, color, icon }) => {
         colorClasses[color] || colorClasses.red
       } text-white`}
       style={boxShadowStyle}
+      onClick={() => navigate(url)}
     >
       {text}
       {icon ? <icon /> : ""}

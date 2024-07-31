@@ -25,7 +25,7 @@ export const Footer = () => {
       <div className="flex flex-1 justify-center items-center gap-1 list-none font-medium">
         <ul>
           {footerLinks.map((link, index) => (
-            <li key={index} className="hover:text-green-600">
+            <li key={index} className="hover:text-green-600 items-center">
               <a href={link.url}>{link.title}</a>
             </li>
           ))}

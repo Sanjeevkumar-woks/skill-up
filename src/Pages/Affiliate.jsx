@@ -1,7 +1,9 @@
+import AffiliateForm from "../components/AffiliateForm";
+
 export default function Affiliate() {
   return (
     <>
-      <p>Affiliate Page</p>
+      <AffiliateForm />
     </>
   );
 }

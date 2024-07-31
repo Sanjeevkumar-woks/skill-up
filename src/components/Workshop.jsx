@@ -35,7 +35,7 @@ export const Workshop = () => {
             </div>
             <div className="flex flex-row gap-1 items-center md:pr-56">
               <div>
-                <p className="flex items-center gap-2 p-1">
+                <p className="flex items-center gap-2 p-1 font-semibold">
                   <span className="bg-pink-400 p-1 rounded-full">
                     <GiTeacher size={25} color="white" />
                   </span>
@@ -46,7 +46,7 @@ export const Workshop = () => {
                 </p>
               </div>
               <div>
-                <p className="flex items-center gap-2 p-1">
+                <p className="flex items-center gap-2 p-1 font-semibold">
                   <span className="bg-blue-400 p-1 rounded-full">
                     <FaGraduationCap size={25} color="white" />
                   </span>

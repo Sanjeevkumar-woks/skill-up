@@ -34,15 +34,12 @@ export const Hero = () => {
           <div className="bg-yellow-500 md:h-96 h-52  w-28 rounded-full"></div>
         </div>
 
-        <div className="bg-white p-4 rounded-xl absolute">
-          <div className="w-full flex justify-center">
-            <img
-              src="https://templates.simplified.co/usetldr/1022255/thumb/5a108056-a070-44ee-a123-1afd489077e0.jpg"
-              className="w-full sm:w-48 md:w-60 lg:w-60 h-auto cursor-pointer object-cover"
-              alt="Coding for Beginners"
-            />
-          </div>
-
+        <div className="bg-white p-4 rounded-xl absolute ">
+          <img
+            src="https://templates.simplified.co/usetldr/1022255/thumb/5a108056-a070-44ee-a123-1afd489077e0.jpg"
+            className="w-48 h-48  cursor-pointer object-cover"
+            alt="Coding for Beginners"
+          />
           <p className="text-black text-center font-bold p-2 rounded-md">
             Coding for Beginners
           </p>

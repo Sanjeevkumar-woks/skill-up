@@ -1,9 +1,5 @@
 export const footerLinks = [
   {
-    title: "All Programs",
-    url: "/programs",
-  },
-  {
     title: "All Courses",
     url: "/courses",
   },

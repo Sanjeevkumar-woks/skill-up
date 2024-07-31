@@ -115,28 +115,27 @@ export const Features = () => {
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col gap-4 items-center md:items-start p-2 w-full py-20">
+        <div className="flex flex-1 flex-col gap-2 items-center md:items-start p-2 w-full py-20">
           <div className="w-fit">
             <p className="text-sm text-purple-600 bg-purple-200 rounded-xl p-1">
               Get more About us
             </p>
           </div>
-          <div className="flex flex-col gap-4">
-            <div>
-              <p className="text-3xl font-bold">Thousand of Top Courses</p>
-              <p className="text-3xl font-bold">Now In One Place</p>
-            </div>
+          <div className="flex flex-col gap-2">
+            <p className="text-3xl font-bold">
+              Thousand of Top{" "}
+              <mark className="bg-yellow-300 rounded-md">Courses</mark> Now In
+              One Place
+            </p>
 
             <div className="flex flex-col gap-1">
               <p className="text-sm text-gray-500">
                 Groove’s intuitive shared inbox makes it easy for team members
                 to
-              </p>
-              <p className="text-sm text-gray-500">
+                <br />
                 organize, prioritize and. In this episode of the Smashing Pod
                 we’re
-              </p>
-              <p className="text-sm text-gray-500">
+                <br />
                 talking about Web Platform Baseline
               </p>
             </div>

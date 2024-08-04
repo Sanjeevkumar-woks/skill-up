@@ -2,6 +2,7 @@ import logo from "../logo.ico";
 import { AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import { LuInstagram } from "react-icons/lu";
 import { footerLinks } from "../utils/footerLinks";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -22,14 +23,16 @@ export const Footer = () => {
           <p className="flex justify-end"> — Maimonides</p>
         </div>
       </div>
-      <div className="flex flex-1 justify-center items-center gap-1 list-none font-medium">
-        <ul>
-          {footerLinks.map((link, index) => (
-            <li key={index} className="hover:text-green-600 items-center">
-              <a href={link.url}>{link.title}</a>
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-1 flex-col justify-center items-center gap-1 font-medium">
+        {footerLinks.map((link, index) => (
+          <Link
+            key={index}
+            to={link.url}
+            className="flex text-sm items-center px-3 py-2 md:py-0 hover:text-green-500"
+          >
+            {link.title}
+          </Link>
+        ))}
       </div>
       <div className="flex flex-1 gap-2 justify-center items-center">
         <AiOutlineLinkedin size={40} className=" hover:text-green-600" />
